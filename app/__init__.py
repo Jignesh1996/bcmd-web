@@ -5,7 +5,7 @@ import flask.scaffold
 flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
 import flask_restful
 from flask_pymongo import PyMongo
-#from flask_restful import Api
+from flask_restful import Api
 from flask_basicauth import BasicAuth
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
